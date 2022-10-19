@@ -1,0 +1,112 @@
+.navbar {
+  background-color: white;
+}
+
+.header-buttons{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search-container{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing{
+  margin-top: 40px;
+  display: grid;
+  gap: 1;
+  grid-template-columns: repeat(3,1fr);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px)  {
+  .listing{
+    display: grid;
+    gap: 1;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .listing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.footer-each-item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: grey;
+}
+
+
+.footer-each-item img {
+  margin-right: 10px;
+}
+
+.labels{
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid grey;
+  cursor: pointer;
+}
+
+.filter-item img{
+  margin-left: 20px;
+}
+
+.filter-item-last{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #7065F0;
+}
+
+.date-select{
+  display: flex;
+  flex-direction: column;
+}
+
+.date-select-child{
+  display: flex;
+  flex-direction: row;
+}
+
+.date-select-child p{
+  margin-right: 50px;
+}
+
+.card-price{
+  color:#7065F0;
+  font-size: medium;
+}
+
+.error-msg{
+  text-align: center;
+  margin-top: 50px;
+}
