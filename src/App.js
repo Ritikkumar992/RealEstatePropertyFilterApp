@@ -19,7 +19,7 @@ function App() {
       const temp = propertiesData.filter((e) => {
         if (e.name.toLowerCase().includes(event.target.value.toLowerCase())) {
           return e;
-        }
+        }    
       });
 
       setPropertiesData(temp);
